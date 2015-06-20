@@ -1,0 +1,11 @@
+{
+"8": [ {"subject":"Thermal","room":"L6"} ],
+"9": [ {"subject":"Solid Mechanics","room":"L6"} ],
+"10": [ {"subject":"Dynamics Of Machines","room":"L6"} ],
+"11": [ {"subject":"Physics2","room":"L3"} ],
+
+"12": [ {"subject":"Maths","room":"L11"} ],
+"14": [ {"subject":"Thermal Lab","room":""} ],
+"15": [ {"subject":"Thermal Lab","room":""} ],
+"16": [ {"subject":"Thermal Lab","room":""} ]
+}

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.arora.nextup" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <icon density="ldpi" src="icon.png" />
+    <icon density="mdpi" src="icon.png" />
+    <icon density="hdpi" src="icon.png" />
+    <icon density="xhdpi" src="icon.png" />
+    <splash density="port-hdpi" src="b.png" />
+    <splash density="port-ldpi" src="d.png" />
+    <splash density="port-mdpi" src="c.png" />
+    <splash density="port-xhdpi" src="a.png" />
+    <name>NextUp</name>
+    <description>
+        NextUp - Time Table in your Pocket!
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        NextUp Team
+    </author>
+    <content src="index.html" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="2300" />
+    <access origin="*" />
+</widget>

@@ -1,0 +1,11 @@
+{
+
+"10": [ {"subject":"Thermodynamics","room":"L12"} ],
+"11": [ {"subject":"Maths","room":"L12"} ],
+
+"13": [ {"subject":"Comm. Skills {A}/{B}","room":"L12/L15"} ],
+"14": [ {"subject":"Comm. Skills {A}/{B} (Pr.)","room":"T2"} ],
+"15": [ {"subject":"Comm. Skills {A}/{B} (Pr.)","room":"T2"} ],
+"16": [ {"subject":"Comm. Skills {A}/{B} (Pr.)","room":"T2"} ],
+"17": [ {"subject":"PE","room":""} ]
+}

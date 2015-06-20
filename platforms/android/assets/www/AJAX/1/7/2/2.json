@@ -1,0 +1,10 @@
+{
+"8": [ {"subject":"Chemistry","room":"L12"} ],
+"9": [ {"subject":"Metallurgy","room":"L12"} ],
+"10": [ {"subject":"Thermodynamics","room":"L12"} ],
+"11": [ {"subject":"Maths","room":"T3"} ],
+
+"13": [ {"subject":"Maths(T)","room":"T7"} ],
+
+"16": [ {"subject":"Engg. Drawing","room":"L12"} ]
+}

@@ -1,0 +1,11 @@
+{
+"8": [ {"subject":"Chemistry","room":"L11"} ],
+
+"10": [ {"subject":"Engg. Drawing","room":"L11"} ],
+"11": [ {"subject":"Maths","room":"L15"} ],
+
+"13": [ {"subject":"Engg. Drawing (Pr.)","room":"DH1"} ],
+"14": [ {"subject":"Engg. Drawing (Pr.)","room":"DH1"} ],
+"15": [ {"subject":"Engg. Drawing (Pr.)","room":"DH1"} ],
+"16": [ {"subject":"Engg. Drawing (Pr.)","room":"DH1"} ]
+}

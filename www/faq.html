@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NextUp</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="resources\bootstrap.css"> 
+<link href="resources\bootstrap-responsive.css" rel="stylesheet"> 
+<script type="text/javascript" src="js\jquery.js"></script>
+<script type="text/javascript" src="js\controller.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="resources\cordova.js"></script>
+
+
+</head>
+
+
+
+
+<body style="background-color:black;color:#f06868">
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+       // Cordova is ready
+
+    function onDeviceReady() {
+    document.addEventListener("backbutton", function(e){
+    e.preventDefault();
+    navigator.app.exitApp();
+    return false;
+}, true);
+
+        }
+</script>
+
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="listings.html">NextUp</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="listings.html">Home</a></li>
+        <li><a href="update.html">Update</a></li>
+        <li><a href="#" class="active">FAQs</a></li>
+        <li><a href="report.html">Report an Error</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h3> Frequently Asked Questions </h3>
+<div style="font-size:15px;">
+<div style="color:wheat;">
+<b>Q1.</b> What is <b> NextUp </b> and how can I use it?<br>
+</div>
+<span class="glyphicon glyphicon-pencil"></span> NextUp is an instant time table 
+app that quickly helps you to figure out the subject and lecture hall details
+for each working day.
+Its a user-friendly app that requires you to only select your credentials
+such as branch, year etc. and figure out the required time table.  <br><br> 
+<div style="color:wheat;">
+<b>Q2.</b> Does the app give me my latest time table with all requisite changes?
+<br></div>
+<span class="glyphicon glyphicon-pencil"></span> Team NextUp is committed to
+provide you with the latest time tables incoporating all changes. As soon
+as any deviations are reported/observed we update it.You should regularly check 
+for app updates on the playstore.<br><br>
+<div style="color:wheat;">
+<b>Q3.</b>Can I change the time table on my own?<br></div>
+<span class="glyphicon glyphicon-pencil"></span> You don't have to as we are 
+just a click away! Any changes you wish to see in the time table can be conveyed
+to us at developer.nextup@gmail.com<br><br>
+<div style="color:wheat;">
+<b>Q4.</b>The navigation bar is broken. What do i do?<br></div>
+<span class="glyphicon glyphicon-pencil"></span> You just require internet
+connectivity and have to press the refresh button.<br><br>
+
+</div>
+</body>
+</html>

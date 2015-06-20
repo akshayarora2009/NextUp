@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NextUp</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="resources\bootstrap.css"> 
+<link href="resources\bootstrap-responsive.css" rel="stylesheet"> 
+<script type="text/javascript" src="js\jquery.js"></script>
+<script type="text/javascript" src="js\controller.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="resources\cordova.js"></script>
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+
+        var year = localStorage.yearCode;
+        var branch = localStorage.branchCode;
+        var group = localStorage.groupCode;
+
+        
+
+        var day = $('#whatday').val();
+
+
+        var link = 'AJAX/' + year + '/' + branch + '/' + group + '/' + day + '.json';
+
+updateTable(link);
+        
+
+
+        $('#whatday').change(function(){
+            var newday=$('#whatday').val();
+		var newlink;
+            newlink = 'AJAX/' + year + '/' + branch + '/' + group + '/' + newday + '.json';
+		$('#ohkk tbody > tr').remove();
+		updateTable(newlink);
+        });
+        
+    function updateTable(link){
+
+$.getJSON(link, function (data) {
+var time = [];
+        var sub = [];
+        var room = [];
+
+            $.each(data, function (key, val) {
+
+                time.push(key);
+                sub.push(val[0].subject);
+                room.push(val[0].room);
+
+            });
+            console.log(time);
+            console.log(sub);
+            console.log(room);
+
+            for (var k = 0; k < time.length; k++) {
+                $('#ohkk').append("<tr><td style='color:white'>" + time[k] + ":00</td><td style='color:white'>" + sub[k] + " - " + room[k] + "</td></tr>");
+
+            }
+
+        });
+
+
+
+
+
+
+
+
+
+}
+
+
+    });
+
+</script>
+
+
+
+
+</head>
+
+
+
+
+<body style="background-color:black;">
+
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+       // Cordova is ready
+
+    function onDeviceReady() {
+    document.addEventListener("backbutton", function(e){
+    e.preventDefault();
+    navigator.app.exitApp();
+    return false;
+}, true);
+
+        }
+</script>
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="listings.html">NextUp <i class="glyphicon glyphicon-refresh"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="update.html">Update</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="report.html">Report an error</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <ul class="nav nav-tabs ">
+
+        <li ><a href="listings.html">Dashboard</a></li>
+
+        <li class="active"><a href="#">Full Time Table</a></li>
+
+        
+
+    </ul>
+
+
+<select id="whatday">
+<option value="1" id="a1">Monday</option>
+<option value="2" id="a2">Tuesday</option>
+<option value="3" id="a3">Wednesday</option>
+<option value="4" id="a4">Thursday</option>
+<option value="5" id="a6">Friday</option>
+</select>
+
+<script type="text/javascript">
+
+
+    var d = new Date();
+    var hmm = d.getDay();
+
+    if (hmm === 0 || hmm === 6) {
+        hmm = 1;
+    }
+
+
+    function preselect(s, i) {
+        s.options[i - 1].selected = true;
+        return;
+    }
+
+
+    preselect(document.getElementById("whatday"), hmm);
+
+
+</script>
+
+
+
+
+
+<table class="table table-hover table-bordered" id="ohkk" style="font-size: 20px">
+        <thead>
+            <tr>
+                <th style="background-color:#f06868; color: white">
+                Time
+                </th>
+                <th style="background-color:#f06868; color: white">
+                Subject - Room
+                </th>
+            </tr>
+        </thead> 
+        
+    </table>
+
+</br>
+<div><input type="submit" id="logout" value="" class="btn btn-primary btn-block"></input></div>
+</br>
+
+
+</body>
+</html>

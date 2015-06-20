@@ -1,0 +1,9 @@
+{
+
+"10": [ {"subject":"Analog","room":"L20"} ],
+"11": [ {"subject":"Digital","room":"L20"} ],
+"13": [ {"subject":"Vector Calculus","room":"L12"} ],
+"14": [ {"subject":"Manufacturing","room":"L17"} ],
+"15": [ {"subject":"Ethics","room":"L15"} ],
+"17": [ {"subject":"Physical Education","room":""} ]
+}

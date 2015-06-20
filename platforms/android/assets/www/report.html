@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NextUp</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="resources\bootstrap.css"> 
+<link href="resources\bootstrap-responsive.css" rel="stylesheet"> 
+<script type="text/javascript" src="js\jquery.js"></script>
+<script type="text/javascript" src="js\controller.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="resources\cordova.js"></script>
+</head>
+
+
+
+
+<body style="background-color:black;">
+
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+       // Cordova is ready
+
+    function onDeviceReady() {
+    document.addEventListener("backbutton", function(e){
+    e.preventDefault();
+    navigator.app.exitApp();
+    return false;
+}, true);
+
+        }
+</script>
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="listings.html">NextUp</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="listings.html">Home</a></li>
+        <li><a href="update.html">Update</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li class="active"><a href="#">Report an Error</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+<div class="row-fluid" >
+<!-- <div class="span10" style="background-color:#f06868;padding-left:10px;border-radius:30px;color:powderBlue">
+    <p style="font-size: 22px">If you spot an error in any Time Table or have any suggestions, feel free to contact us at: 
+developer.nextup@gmail.com</p>
+</div>-->
+
+
+<div class="container-fluid">
+ <div class="row-fluid">
+   <div class="span10" style="background-color:#f06868;
+    border-radius:30px;color:powderBlue; padding: 8px 30px;">
+      <p style="font-size: 20px; color:black">If you spot an error in any Time Table or have suggestions, feel free to contact us at: 
+<div style="font-size:16px;color:black">developer.nextup@gmail.com</div></p>
+    </div>
+ </div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

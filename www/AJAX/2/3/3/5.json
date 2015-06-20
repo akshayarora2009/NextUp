@@ -1,0 +1,10 @@
+{
+"8": [ {"subject":"Computer Networks","room":"L21"} ],
+"9": [ {"subject":"Operating Systems","room":"L21"} ],
+"10": [ {"subject":"Object Oriented Programming","room":"L22"} ],
+"11": [ {"subject":"Chemistry","room":"L23 (G1) L25(G2)"} ],
+"12": [ {"subject":"Mathematics","room":"L12"} ],
+"14": [ {"subject":"Microprocessors","room":"L22"} ],
+"15": [ {"subject":"Departmental Lab","room":"CL-5"} ],
+"16": [ {"subject":"Departmental Lab","room":"CL-5"} ]
+}

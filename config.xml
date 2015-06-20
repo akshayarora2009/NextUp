@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.arora.nextup" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NextUp</name>
+    <description>
+        NextUp - Time Table in your Pocket!
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        NextUp Team
+    </author>
+    <content src="index.html" />
+ <platform name="android">
+              <icon src="icon.png" density="ldpi" />
+              <icon src="icon.png" density="mdpi" />
+              <icon src="icon.png" density="hdpi" />
+              <icon src="icon.png" density="xhdpi" />
+     </platform> 
+<preference name="SplashScreen" value="screen" />
+<preference name="SplashScreenDelay" value="2300" />
+
+<platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="b.png" density="port-hdpi"/>
+    <splash src="d.png" density="port-ldpi"/>
+    <splash src="c.png" density="port-mdpi"/>
+    <splash src="a.png" density="port-xhdpi"/>
+</platform>
+<access origin="*" />
+</widget>

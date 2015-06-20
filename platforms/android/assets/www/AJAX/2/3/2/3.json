@@ -1,0 +1,10 @@
+{
+
+"9": [ {"subject":"Operating Systems","room":"L21"} ],
+"10": [ {"subject":"Object Oriented Programming","room":"L21"} ],
+"11": [ {"subject":"Computer Networks","room":"L22"} ],
+"12": [ {"subject":"Chemistry","room":"L21(G1) L12(G2)"} ],
+"14": [ {"subject":"Chemistry Lab(G2)","room":""} ],
+"15": [ {"subject":"Chemistry Lab(G2)","room":""} ],
+"16": [ {"subject":"Chemistry Lab(G2)","room":""} ]
+}
